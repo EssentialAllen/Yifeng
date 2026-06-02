@@ -1069,14 +1069,13 @@ nav a.active::after {
 footer {
   background-color: var(--white);
   border-top: 1px solid rgba(226, 232, 240, 0.8);
-  padding: 4.5rem 0 2.5rem 0;
+  padding: 4.5rem 0;
 }
 
 .footer-top {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 3.5rem;
 }
 
 .footer-about {
@@ -1121,15 +1120,7 @@ footer {
   color: var(--primary-blue);
 }
 
-.footer-bottom {
-  border-top: 1px solid rgba(226, 232, 240, 0.8);
-  padding-top: 1.75rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #64748b;
-  font-size: 0.85rem;
-}
+
 
 /* --- INTERACTIVE MODAL OVERLAY --- */
 .modal-overlay {
@@ -1354,7 +1345,7 @@ textarea.form-control {
   }
   
   .footer-top {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 2rem;
     align-items: center;
     text-align: center;
@@ -1480,11 +1471,7 @@ textarea.form-control {
     font-size: 2rem;
   }
   
-  .footer-bottom {
-    flex-direction: column;
-    text-align: center;
-    gap: 0.75rem;
-  }
+
 }
 
 @media (max-width: 480px) {
