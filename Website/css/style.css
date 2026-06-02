@@ -236,6 +236,36 @@ nav a.active::after {
   width: 100%;
 }
 
+.lang-switch {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  border: 1.5px solid var(--border-color);
+  border-radius: 4px;
+  color: #475569;
+  display: inline-flex;
+  align-items: center;
+  transition: var(--transition-fast);
+  margin-top: -0.1rem;
+}
+
+.lang-switch:hover {
+  border-color: var(--primary-blue);
+  color: var(--primary-blue);
+  background-color: rgba(13, 58, 117, 0.05);
+}
+
+.lang-switch::after {
+  display: none !important; /* Disable active underline on language switcher */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 .header-btn {
   font-family: var(--font-heading);
   font-size: 0.85rem;
